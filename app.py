@@ -15,8 +15,7 @@ def calcular_promedio():
         return render_template('resultado.html', promedio=promedio)
 
 if __name__ == '__main__':
-    # Cambia el número de puerto según tus necesidades
-    app.run(port=5001)
+    app.run(host='0.0.0.0', port=5000)
 
 if __name__ == '__main__':
     app.run(debug=True)
